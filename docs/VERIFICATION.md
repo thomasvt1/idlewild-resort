@@ -29,7 +29,7 @@ Validated on 2026-10-30 using Node 24, Cloudflare's local workerd runtime via Wr
 
 ## External delivery status
 
-The local Git repository and Cloudflare/GitHub Actions configuration are ready. GitHub rejected repository creation through both GraphQL and REST with **403 / Resource not accessible by integration**. No remote repository or GitHub Actions run is claimed. Publishing the source requires a writable repository URL or credentials authorized to create a repository.
+The source repository is [thomasvt1/idlewild-resort](https://github.com/thomasvt1/idlewild-resort). GitHub-hosted verification and deployment jobs are configured in `.github/workflows/ci.yml`; current run results and downloadable browser-test reports are available under [Actions](https://github.com/thomasvt1/idlewild-resort/actions/workflows/ci.yml).
 
 No Cloudflare account credentials are configured in this environment. A production deployment and checks against its public hostname remain unverified. The README documents the two required GitHub secrets, deployment enablement variable, first-deployment command, health check, and rollback constraints. Native WebMCP compatibility outside the tested Chromium versions remains dependent on the host browser's experimental API.
 
