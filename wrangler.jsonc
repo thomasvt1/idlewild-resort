@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "idlewild-resort",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": { "directory": "./dist", "binding": "ASSETS", "run_worker_first": true },
+  "durable_objects": { "bindings": [{ "name": "RESORT", "class_name": "Resort" }] },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Resort"] }],
+  "observability": { "enabled": true, "head_sampling_rate": 0.1, "redact_query_string": true },
+}
