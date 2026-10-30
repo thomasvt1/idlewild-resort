@@ -33,6 +33,6 @@ The source repository is [thomasvt1/idlewild-resort](https://github.com/thomasvt
 
 The [first GitHub-hosted verification run](https://github.com/thomasvt1/idlewild-resort/actions/runs/41064085519) passed the 13 unit/storage tests, 14 end-to-end tests, dependency audit, production build, and Cloudflare deployment dry run. Its deprecated action-runtime warning prompted an update to current SHA-pinned action releases and an explicit Ubuntu 24.04 runner. Production deployment is gated by `CLOUDFLARE_DEPLOY_ENABLED` and was skipped.
 
-No Cloudflare account credentials are configured in this environment. A production deployment and checks against its public hostname remain unverified. The README documents the two required GitHub secrets, deployment enablement variable, first-deployment command, health check, and rollback constraints. Native WebMCP compatibility outside the tested Chromium versions remains dependent on the host browser's experimental API.
+No Cloudflare account credentials are configured in this environment. A production deployment and checks against its public hostname remain unverified. The [operations guide](OPERATIONS.md#deploy-to-cloudflare) documents the two required GitHub secrets, deployment enablement variable, first-deployment command, health check, and rollback constraints. Native WebMCP compatibility outside the tested Chromium versions remains dependent on the host browser's experimental API.
 
 This record describes observed checks and the remaining access limits; it is not a production-security certification.
