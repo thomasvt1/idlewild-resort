@@ -78,7 +78,7 @@ For a custom domain, attach a Worker Custom Domain in Cloudflare and use that HT
 
 ### GitHub Actions runners
 
-`.github/workflows/ci.yml` uses GitHub-hosted Ubuntu runners with Node 24. Every pull request and main push runs type checking, unit tests, a production build, a dependency audit, browser/API/MCP/WebMCP tests, and a Wrangler deployment dry run. It uploads Playwright reports. Third-party actions are pinned to commit SHAs; PR jobs receive no Cloudflare credentials.
+`.github/workflows/ci.yml` uses GitHub-hosted Ubuntu 24.04 runners with Node 24. Every pull request and main push runs type checking, unit tests, a production build, a dependency audit, browser/API/MCP/WebMCP tests, and a Wrangler deployment dry run. It uploads Playwright reports. Third-party actions are pinned to commit SHAs; PR jobs receive no Cloudflare credentials.
 
 To enable deployment after successful main-branch verification:
 
