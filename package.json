@@ -32,7 +32,7 @@
     "@types/node": "^26.6.6",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
-    "@vitejs/plugin-react": "^6.1.2",
+    "@vitejs/plugin-react": "^6.2.1",
     "esbuild": "^0.28.2",
     "miniflare": "^5.20261023.3-beta",
     "prettier": "^3.9.10",
